@@ -34,10 +34,8 @@ public class RegexProblem {
         /*
          Country code follow by space and 10 digit number
          */
-
-
+/*
             System.out.print("Enter your Mobile number: ");
-            */
             boolean mobileNo = Pattern.matches("[0-9]{1,3}\s[9876]{1}[0-9]{9}",scanner.nextLine());
             System.out.println("Result : " + mobileNo);
 
@@ -45,8 +43,9 @@ public class RegexProblem {
         /*
         Password must be minimum of 8 character.
         at least one upper-case.
+        at least one number.
          */
             System.out.print("Enter your Password: ");
-            boolean password = Pattern.matches("^(?=.*[a-z])(?=.*[A-Z]).{8,20}$", sc.next());
+            boolean password = Pattern.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,20}$", sc.next());
             System.out.println("Result : " + password);
         }}
